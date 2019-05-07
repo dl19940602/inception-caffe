@@ -1,0 +1,18 @@
+net: "models/bvlc_googlenet/inception_bn_5*5.prototxt"
+test_iter: 100
+test_interval: 100
+#test_initialization: false
+display: 100
+#average_loss: 40
+base_lr: 0.1
+lr_policy: "multistep"
+gamma:0.1
+stepvalue:32000
+stepvalue:48000
+#power: 0.5
+max_iter: 64000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 10000
+snapshot_prefix: "models/bvlc_googlenet/bvlc_googlenet_quick"
+solver_mode: GPU
